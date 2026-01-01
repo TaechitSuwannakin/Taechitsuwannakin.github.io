@@ -23,77 +23,83 @@
             background-color: #ffffff;
             color: #000000;
         }
+        a:hover {
+            text-decoration: underline;
+        }
         @media print {
             body { -webkit-print-color-adjust: exact; }
+            .no-print { display: none; }
         }
     </style>
 </head>
-<body class="bg-white text-black font-sans p-8 md:p-12 max-w-5xl mx-auto">
+<body class="bg-white text-black font-sans p-8 md:p-16 max-w-5xl mx-auto selection:bg-gray-200">
 
-    <header class="border-b-2 border-black pb-6 mb-8">
-        <h1 class="text-4xl font-bold uppercase tracking-wide mb-2">เตชิษฐ์ สุวรรณนาคินทร์</h1>
-        <p class="text-xl font-medium text-gray-700 mb-4">Mathematics with Computer Science Student</p>
+    <header class="border-b-4 border-black pb-6 mb-10">
+        <h1 class="text-5xl font-bold uppercase tracking-tight mb-2">เตชิษฐ์ สุวรรณนาคินทร์</h1>
+        <p class="text-2xl font-light text-gray-800 mb-6">Mathematics with Computer Science Student</p>
         
-        <div class="text-sm md:text-base flex flex-wrap gap-x-6 gap-y-2 text-gray-800">
-            <span><strong>Tel:</strong> 094-3907123</span>
-            <span><strong>Email:</strong> Taechitsuwannakin@gmail.com</span>
-            <span><strong>Location:</strong> นนทบุรี</span>
-            <span><strong>GitHub:</strong> github.com/TaechitSuwannakin</span>
+        <div class="text-base flex flex-wrap gap-x-8 gap-y-2 font-medium text-gray-900">
+            <span>094-3907123</span>
+            <span>Taechitsuwannakin@gmail.com</span>
+            <span>นนทบุรี</span>
+            <a href="https://github.com/TaechitSuwannakin" target="_blank" class="hover:text-gray-600 transition-colors">github.com/TaechitSuwannakin</a>
         </div>
     </header>
 
-    <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
         
-        <aside class="md:col-span-4 space-y-8">
+        <aside class="lg:col-span-4 space-y-10">
             
             <section>
-                <h2 class="text-lg font-bold uppercase border-b border-black pb-1 mb-3">Position of Interest</h2>
-                <ul class="list-disc list-inside space-y-1 text-gray-800">
-                    <li>UX/UI Design</li>
-                    <li>Frontend Developer</li>
-                    <li>System Analysis</li>
+                <h2 class="text-lg font-bold uppercase border-b-2 border-black pb-2 mb-4 tracking-wider">Position of Interest</h2>
+                <ul class="space-y-2 text-gray-900 font-medium">
+                    <li class="flex items-center"><span class="mr-2 text-xl leading-none">&bull;</span> UX/UI Design</li>
+                    <li class="flex items-center"><span class="mr-2 text-xl leading-none">&bull;</span> Frontend Developer</li>
+                    <li class="flex items-center"><span class="mr-2 text-xl leading-none">&bull;</span> System Analysis</li>
                 </ul>
             </section>
 
             <section>
-                <h2 class="text-lg font-bold uppercase border-b border-black pb-1 mb-3">Education</h2>
-                <div class="mb-2">
-                    <p class="font-bold">King Mongkut's University of Technology North Bangkok</p>
-                    <p class="text-gray-600 text-sm">2023 - ปัจจุบัน</p>
+                <h2 class="text-lg font-bold uppercase border-b-2 border-black pb-2 mb-4 tracking-wider">Education</h2>
+                <div class="mb-3">
+                    <p class="font-bold text-lg leading-tight">King Mongkut's University of Technology North Bangkok</p>
+                    <p class="text-gray-600 text-sm mt-1">2023 - ปัจจุบัน</p>
                 </div>
-                <p>คณะวิทยาศาสตร์ประยุกต์</p>
-                <p>สาขาคณิตศาสตร์เชิงวิทยาการคอมพิวเตอร์</p>
-                <p class="mt-2 text-sm"><strong>GPAX:</strong> 2.51</p>
+                <div class="text-gray-800 space-y-1">
+                    <p>คณะวิทยาศาสตร์ประยุกต์</p>
+                    <p>สาขาคณิตศาสตร์เชิงวิทยาการคอมพิวเตอร์</p>
+                </div>
+                <p class="mt-3 font-mono text-sm border-l-2 border-black pl-3 py-1">GPAX: 2.51</p>
             </section>
 
             <section>
-                <h2 class="text-lg font-bold uppercase border-b border-black pb-1 mb-3">Technical Skills</h2>
+                <h2 class="text-lg font-bold uppercase border-b-2 border-black pb-2 mb-4 tracking-wider">Technical Skills</h2>
                 
-                <div class="mb-4">
-                    <h3 class="font-bold text-sm mb-1">Web Development</h3>
-                    <p class="text-gray-700 text-sm leading-relaxed">
+                <div class="mb-5">
+                    <h3 class="font-bold text-sm uppercase text-gray-500 mb-2">Web Development</h3>
+                    <p class="text-gray-900 leading-relaxed font-medium">
                         React.js, Next.js, Tailwind CSS, Node.js, HTML5, CSS
                     </p>
                 </div>
 
-                <div class="mb-4">
-                    <h3 class="font-bold text-sm mb-1">Programming</h3>
-                    <p class="text-gray-700 text-sm leading-relaxed">
+                <div class="mb-5">
+                    <h3 class="font-bold text-sm uppercase text-gray-500 mb-2">Programming</h3>
+                    <p class="text-gray-900 leading-relaxed font-medium">
                         JavaScript, TypeScript, Python, SQL
                     </p>
                 </div>
 
-                <div class="mb-4">
-                    <h3 class="font-bold text-sm mb-1">Backend & Tools</h3>
-                    <p class="text-gray-700 text-sm leading-relaxed">
+                <div class="mb-5">
+                    <h3 class="font-bold text-sm uppercase text-gray-500 mb-2">Backend & Tools</h3>
+                    <p class="text-gray-900 leading-relaxed font-medium">
                         Supabase, PostgreSQL, Git, GitHub, Figma
                     </p>
                 </div>
             </section>
 
             <section>
-                <h2 class="text-lg font-bold uppercase border-b border-black pb-1 mb-3">Soft Skills</h2>
-                <ul class="list-disc list-inside space-y-1 text-gray-800 text-sm">
+                <h2 class="text-lg font-bold uppercase border-b-2 border-black pb-2 mb-4 tracking-wider">Soft Skills</h2>
+                <ul class="list-disc list-inside space-y-2 text-gray-900">
                     <li>สามารถทำงานกับผู้อื่นได้ดี</li>
                     <li>พร้อมเรียนรู้สิ่งใหม่ๆ</li>
                     <li>มีความรับผิดชอบ</li>
@@ -102,70 +108,106 @@
             </section>
         </aside>
 
-        <main class="md:col-span-8 space-y-8">
-            <h2 class="text-xl font-bold uppercase border-b-2 border-black pb-2 mb-6">Projects</h2>
+        <main class="lg:col-span-8 space-y-10">
+            <h2 class="text-2xl font-bold uppercase border-b-4 border-black pb-3 mb-8 tracking-widest">Projects</h2>
 
-            <article>
+            <article class="group">
                 <div class="flex flex-col sm:flex-row justify-between sm:items-baseline mb-2">
-                    <h3 class="text-lg font-bold">Rumaibadminton <span class="text-sm font-normal text-gray-600">[Personal Project]</span></h3>
-                    <span class="text-sm text-gray-600 font-mono">Dec 2025</span>
+                    <h3 class="text-xl font-bold group-hover:text-gray-700 transition-colors">
+                        Rumaibadminton 
+                        <span class="text-sm font-normal text-gray-500 ml-2 align-middle border border-gray-300 px-2 rounded-full">Personal Project</span>
+                    </h3>
+                    <span class="text-sm font-mono text-gray-500 whitespace-nowrap">Dec 2025</span>
                 </div>
-                <p class="text-gray-800 mb-2">
-                    ออกแบบและพัฒนา Web Application แบบ Full-stack สำหรับระบบแนะนำไม้แบดมินตันแบบเฉพาะบุคคล (Personalized Recommendation)
+                
+                <p class="text-sm font-mono text-gray-600 mb-3">
+                    <span class="font-bold text-black">Technologies:</span> React, TypeScript, Supabase, Tailwind CSS
                 </p>
-                <ul class="list-disc list-outside ml-5 text-gray-700 text-sm space-y-1 mb-2">
-                    <li>พัฒนาอัลกอริทึม Search & Filter ที่ซับซ้อนด้วย React และ TypeScript</li>
-                    <li>ออกแบบ Database Schema และเชื่อมต่อระบบจัดการข้อมูลผ่าน Supabase</li>
+
+                <p class="text-gray-800 mb-3 leading-relaxed">
+                    ออกแบบและพัฒนา Web Application แบบ <strong>Full-stack</strong> สำหรับระบบแนะนำไม้แบดมินตันแบบเฉพาะบุคคล (Personalized Recommendation) โดยวิเคราะห์จากสไตล์การเล่นและงบประมาณของผู้ใช้งาน
+                </p>
+                <ul class="list-disc list-outside ml-5 text-gray-700 space-y-1 mb-4">
+                    <li>พัฒนาอัลกอริทึม <strong>Search & Filter</strong> ที่ซับซ้อนเพื่อการค้นหาที่แม่นยำ</li>
+                    <li>ออกแบบ <strong>Database Schema</strong> และเชื่อมต่อระบบจัดการข้อมูลผ่าน Supabase</li>
                 </ul>
-                <p class="text-sm text-gray-500">Live Demo: rumai-badminton.vercel.app</p>
+                
+                <a href="https://rumai-badminton.vercel.app/" target="_blank" class="inline-flex items-center font-bold text-black border-b-2 border-black hover:bg-black hover:text-white px-1 transition-all">
+                    Live Demo 
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+                </a>
             </article>
 
-            <hr class="border-gray-300 border-dashed">
+            <hr class="border-gray-200">
 
             <article>
                 <div class="flex flex-col sm:flex-row justify-between sm:items-baseline mb-2">
-                    <h3 class="text-lg font-bold">สายการบิน Taechit Airline <span class="text-sm font-normal text-gray-600">[Figma UX/UI]</span></h3>
-                    <span class="text-sm text-gray-600 font-mono">Oct 2025</span>
+                    <h3 class="text-xl font-bold">
+                        สายการบิน Taechit Airline
+                        <span class="text-sm font-normal text-gray-500 ml-2 align-middle border border-gray-300 px-2 rounded-full">UX/UI Project</span>
+                    </h3>
+                    <span class="text-sm font-mono text-gray-500 whitespace-nowrap">Oct 2025</span>
                 </div>
-                <p class="text-gray-800 mb-2">
-                    ระบบจองเที่ยวบินครบวงจร พร้อมระบบจัดการสิทธิ์ผู้ใช้งาน (RBAC) สำหรับพนักงาน
+
+                 <p class="text-sm font-mono text-gray-600 mb-3">
+                    <span class="font-bold text-black">Tools:</span> Figma, ER Diagram, System Design
                 </p>
-                <ul class="list-disc list-outside ml-5 text-gray-700 text-sm space-y-1">
-                    <li>ออกแบบโครงสร้าง Database Schema (ER & Relational Diagram)</li>
-                    <li>สร้าง Interactive Prototype จำนวน 55 หน้า เชื่อมโยง Flow การทำงานสมบูรณ์ทุกขั้นตอน</li>
+
+                <p class="text-gray-800 mb-3 leading-relaxed">
+                    ระบบจองเที่ยวบินครบวงจร (เลือกที่นั่ง/อาหาร/ชำระเงิน) พร้อมระบบจัดการสิทธิ์ผู้ใช้งาน (RBAC) สำหรับพนักงาน และระบบออกรายงาน
+                </p>
+                <ul class="list-disc list-outside ml-5 text-gray-700 space-y-1">
+                    <li>ออกแบบโครงสร้าง Database Schema (ER & Relational Diagram) ที่รองรับการใช้งานจริง</li>
+                    <li>สร้าง <strong>Interactive Prototype จำนวน 55 หน้า</strong> เชื่อมโยง Flow การทำงานสมบูรณ์ทุกขั้นตอน</li>
                 </ul>
             </article>
 
-            <hr class="border-gray-300 border-dashed">
+            <hr class="border-gray-200">
 
             <article>
                 <div class="flex flex-col sm:flex-row justify-between sm:items-baseline mb-2">
-                    <h3 class="text-lg font-bold">Hospital System (Nuclear Medicine) <span class="text-sm font-normal text-gray-600">[SA Project]</span></h3>
-                    <span class="text-sm text-gray-600 font-mono">Sep 2025</span>
+                    <h3 class="text-xl font-bold">
+                        Hospital System (Nuclear Medicine)
+                        <span class="text-sm font-normal text-gray-500 ml-2 align-middle border border-gray-300 px-2 rounded-full">System Analysis</span>
+                    </h3>
+                    <span class="text-sm font-mono text-gray-500 whitespace-nowrap">Sep 2025</span>
                 </div>
-                <p class="text-gray-800 mb-2">
-                    ระบบสารสนเทศโรงพยาบาล (HIS) สำหรับแผนกเวชศาสตร์นิวเคลียร์ เพื่อลดภาระงานและเวลาการรอคิว
+
+                <p class="text-sm font-mono text-gray-600 mb-3">
+                    <span class="font-bold text-black">Focus:</span> Requirement Analysis, Process Flow, UI Design
                 </p>
-                <ul class="list-disc list-outside ml-5 text-gray-700 text-sm space-y-1">
-                    <li>วิเคราะห์ความต้องการ (Requirement) และจัดทำ System Analysis and Design</li>
-                    <li>ออกแบบ UI และต้นแบบระบบเชื่อมต่อข้อมูล HOMC ครอบคลุม OPD/IPD, Lab/PACS และระบบนัดหมาย</li>
+
+                <p class="text-gray-800 mb-3 leading-relaxed">
+                    ระบบสารสนเทศโรงพยาบาล (HIS) สำหรับแผนกเวชศาสตร์นิวเคลียร์ เพื่อลดภาระงานของบุคลากรและลดระยะเวลาการรอคิวของผู้ป่วย
+                </p>
+                <ul class="list-disc list-outside ml-5 text-gray-700 space-y-1">
+                    <li>วิเคราะห์ความต้องการ (Requirement) และจัดทำเอกสาร System Analysis and Design</li>
+                    <li>ออกแบบ UI และต้นแบบระบบเชื่อมต่อข้อมูล HOMC ครอบคลุมระบบคิว OPD/IPD, การส่ง Lab/PACS และระบบนัดหมาย</li>
                 </ul>
             </article>
 
-            <hr class="border-gray-300 border-dashed">
+            <hr class="border-gray-200">
 
             <article>
                 <div class="flex flex-col sm:flex-row justify-between sm:items-baseline mb-2">
-                    <h3 class="text-lg font-bold">Music Equipment Store <span class="text-sm font-normal text-gray-600">[Academic Project]</span></h3>
-                    <span class="text-sm text-gray-600 font-mono">Aug 2025</span>
+                    <h3 class="text-xl font-bold">
+                        Music Equipment Store
+                        <span class="text-sm font-normal text-gray-500 ml-2 align-middle border border-gray-300 px-2 rounded-full">Academic Project</span>
+                    </h3>
+                    <span class="text-sm font-mono text-gray-500 whitespace-nowrap">Aug 2025</span>
                 </div>
-                <p class="text-gray-800 mb-2">
+
+                <p class="text-sm font-mono text-gray-600 mb-3">
+                    <span class="font-bold text-black">Technologies:</span> HTML, CSS, JavaScript (Frontend Focus)
+                </p>
+
+                <p class="text-gray-800 mb-3 leading-relaxed">
                     ระบบเว็บไซต์ร้านขายอุปกรณ์ดนตรี จัดการข้อมูลสินค้าและระบบสมาชิก
                 </p>
-                <ul class="list-disc list-outside ml-5 text-gray-700 text-sm space-y-1">
-                    <li>รับผิดชอบพัฒนาส่วน Frontend ของเว็บไซต์</li>
-                    <li>ออกแบบหน้าต่างและเขียนฟังก์ชัน CRUD Operations สำหรับจัดการข้อมูลสินค้า</li>
-                    <li>ทำงานร่วมกับฝ่าย Backend เพื่อเชื่อมต่อระบบ</li>
+                <ul class="list-disc list-outside ml-5 text-gray-700 space-y-1">
+                    <li>รับผิดชอบพัฒนาส่วน <strong>Frontend</strong> ทั้งหมดของเว็บไซต์</li>
+                    <li>ออกแบบ Interface และเขียนฟังก์ชัน <strong>CRUD Operations</strong> สำหรับหน้าต่างการจัดการข้อมูลสินค้า</li>
+                    <li>Collaborate กับทีม Backend เพื่อเชื่อมต่อระบบสมาชิก</li>
                 </ul>
             </article>
 
